@@ -1,14 +1,30 @@
-git clone https://github.com/Georgy-Chachava/TestOne
-Cloning into 'TestOne'...
-remote: Counting objects: 3, done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (3/3), done.
-$ ls
-TestOne
-$ cd TestOne
-$ ls
-README.md
-guyglvkcgjh
-Spelling mistake 
-ghost serve 
-git status
+import pygame
+from pygame.draw import *
+
+pygame.init()
+
+FPS = 30
+screen = pygame.display.set_mode((400, 400))
+
+x1 = 100; y1 = 100
+x2 = 300; y2 = 200
+N = 10
+color = (255, 255, 255)
+rect(screen, color, (x1, y1, x2 - x1, y2 - y1), 2)
+h = (x2 - x1) // (N + 1)
+x = x1 + h
+for i in range(N):
+    line(screen, color, (x, y1), (x, y2))
+    x += h
+
+pygame.display.update()
+clock = pygame.time.Clock()
+finished = False
+
+while not finished:
+    clock.tick(FPS)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            finished = True
+
+pygame.quit()
