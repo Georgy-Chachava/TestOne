@@ -9,3 +9,6 @@ $ cd TestOne
 $ ls
 README.md
 guyglvkcgjh
+Spelling mistake 
+ghost serve 
+git status
