@@ -7,4 +7,3 @@ git remote add origin https://github.com/Georgy-Chachava/TestOne.git
 git push -u origin main
 git config user.name "Georgy Chachava"
 git config user.email ga.chachava@mail.ru
-git log
