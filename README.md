@@ -1,10 +1,11 @@
-$ git clone 
-echo "# TestOne" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Georgy-Chachava/TestOne.git
-git push -u origin main
-git config user.name "Georgy Chachava"
-git config user.email ga.chachava@mail.ru
+git clone https://github.com/Georgy-Chachava/TestOne
+Cloning into 'TestOne'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+$ ls
+TestOne
+$ cd TestOne
+$ ls
+README.md
+guyglvkcgjh
